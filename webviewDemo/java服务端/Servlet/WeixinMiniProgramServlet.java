@@ -19,8 +19,8 @@ import javax.servlet.http.HttpServletResponse;
 public class WeixinMiniProgramServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	private static final String AppId = "wx57b6c3f6da1c9a24";
-	private static final String AppSecret = "4038b724832658201e06e759e8e09afa";
+	private static final String AppId = "";
+	private static final String AppSecret = "";
 	
     public WeixinMiniProgramServlet() {
         super();
