@@ -1,0 +1,18 @@
+<!--pages/detail/detail.wxml-->
+<!-- <block wx:if="{{!firstLogin}}">
+  <view>
+    <web-view src="{{detailWebUrl}}"></web-view>
+  </view>
+</block>
+<block wx:else>
+  <view class="container">
+    <image class="userinfo-avatar" src="" mode="cover"></image>
+    <view class="usermotto">
+      <button class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 立即体验 </button>
+     </view>
+  </view>
+</block> -->
+
+<view>
+    <web-view src="{{detailWebUrl}}"></web-view>
+</view>

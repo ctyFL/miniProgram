@@ -1,0 +1,6 @@
+<!--pages/index/index.wxml-->
+<block wx:if="{{firstLogin}}">
+  <view>
+    <web-view src="{{webUrl}}"></web-view>
+  </view>
+</block>

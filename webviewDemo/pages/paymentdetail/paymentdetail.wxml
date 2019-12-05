@@ -1,0 +1,2 @@
+<!--pages/paymentdetail/paymentdetail.wxml-->
+<web-view src="{{webUrl}}"></web-view>
