@@ -103,7 +103,7 @@ doLogin: function () {
 
   globalData: {
     firstLogin: true,
-    baseUrl: 'https://xxx.xxxxxx.com',
+    baseUrl: 'https://13977.chinacloudpms.com',
     getTokenUrl: 'https://api.weixin.qq.com/sns/jscode2session',
     userInfo: null,
     encryptedData: null,
