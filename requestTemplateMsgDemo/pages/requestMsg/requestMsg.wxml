@@ -1,0 +1,2 @@
+<!--pages/requestMsg/requestMsg.wxml-->
+<button bindtap="requestMsg">点击授权订阅消息</button>
