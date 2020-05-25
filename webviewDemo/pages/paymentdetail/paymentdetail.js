@@ -19,7 +19,7 @@ Page({
     //wx.setStorageSync('onShow', true);
     if (options.customerid) {
       this.setData({
-        webUrl: global.baseUrl + '/bpm/mobile/community_wx/charge/paymentdetail.jsp?mini_openID=' + global.openid + '&unionID=' + global.unionid + '&avatarUrl=' + global.avatarUrl + '&nickName=' + encodeURI(encodeURI(global.nickName)) + '&customerid=' + options.customerid
+        webUrl: global.baseUrl + '/bpm/mobile/community_wx/charge/paymentdetailListByYear.jsp?mini_openID=' + global.openid + '&unionID=' + global.unionid + '&avatarUrl=' + global.avatarUrl + '&nickName=' + encodeURI(encodeURI(global.nickName)) + '&customerid=' + options.customerid
       })
     }
     console.log(this.data.webUrl);

@@ -25,14 +25,16 @@ Page({
       package: pkg,
       signType: options.signType,
       paySign: sign,
-      customerid: options.customerid
+      customerid: options.customerid,
+      recordId: options.recordId
     };
-    console.log('调起收银台参数：' + param);
+    console.log('调起收银台参数：' + 'timeStamp：' + options.timeStamp + '，nonceStr：' + options.nonceStr + '，package：' + pkg + '，signType：' + options.signType + '，paySign：' + sign + '，customerid：' + options.customerid + '，recordId：' + options.recordId);
 
     this.wxPay(param);
   },
 
   wxPay: function(param) {
+    var recordId = param.recordId;
     wx.requestPayment({
       timeStamp: param.timeStamp,
       nonceStr: param.nonceStr,
@@ -45,7 +47,14 @@ Page({
       },
 
       fail: res => {
-        console.log(res);
+        console.log("fail" + res);
+        wx.request({
+          url: global.baseUrl + '/bpm/WeixinCore',
+          data: {
+            action: 'rollBack',
+            recordId: recordId
+          }
+        })
       },
 
       complete: res => {
