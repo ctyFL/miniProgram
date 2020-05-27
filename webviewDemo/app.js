@@ -104,6 +104,7 @@ doLogin: function () {
   globalData: {
     firstLogin: true,
     baseUrl: 'https://13977.chinacloudpms.com',
+    //baseUrl: 'http://192.168.10.153:7070',
     getTokenUrl: 'https://api.weixin.qq.com/sns/jscode2session',
     userInfo: null,
     encryptedData: null,
